@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "MaxWell Tuto Mod",
+	"description": "c un mod tuto fait par moi",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/maxwelltutomod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.max.tutomod.TutorialMod"
+		],
+		"client": [
+			"net.max.tutomod.TutorialModClient"
+		],
+		"fabric-datagen": [
+			"net.max.tutomod.TutorialModDataGenerator"
+		]
+	},
+	"mixins": [
+		"maxwelltutomod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
